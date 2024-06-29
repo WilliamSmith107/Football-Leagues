@@ -15,18 +15,41 @@ struct HomeView: View {
 
         VStack {
             
+            HStack {
+                Spacer()
+                
+                Picker("Year", selection: $viewModel.selectedYear) {
+                    ForEach(viewModel.years, id: \.self) { year in
+                        if (year == 2023) {
+                            Text("\(year.description) (Current)")
+                        } else{
+                            Text("\(year.description)")
+                        }
+                    }
+                }
+                .pickerStyle(MenuPickerStyle())
+            }
+            
+            
             ScrollView {
                 
                 // Display all leagues in the API.
                 ForEach(viewModel.leagues) { league in
-                    Text("\(league.name)")
+                    
+                    if (league.years != nil) {
+                        if ((league.years!.contains(viewModel.selectedYear))) {
+                            Text("\(league.name)")
+                        }
+                    }
                 }
             }
         }
         .task {
             do {
-                
+                // First fetch all leagues.
                 viewModel.leagues = try await viewModel.getLeagues()
+                // Fetch and assign years with data for each league.
+                try await viewModel.assignYears()
                 
             } catch LError.invalidURL {
                 print("Invalid URL.")
