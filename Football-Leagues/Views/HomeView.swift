@@ -40,11 +40,20 @@ struct HomeView: View {
                         if (league.years != nil) {
                             if ((league.years!.contains(viewModel.selectedYear))) {
                                 
-                                LeagueView(league: league)
-                                    .frame(height: 120)
-                                
+                                Button(action: {
+                                    viewModel.selectedLeague = league
+                                    print("\(league.id) : \(viewModel.selectedYear)")
+                                    
+                                }, label: {
+                                    LeagueView(league: league)
+                                        .frame(height: 120)
+                                })
+                                .buttonStyle(PlainButtonStyle())
                             }
                         }
+                    }
+                    .sheet(item: $viewModel.selectedLeague) { league in
+                        SeasonView(id: league.id, year: viewModel.selectedYear)
                     }
                 }
             }

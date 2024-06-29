@@ -20,6 +20,10 @@
 		3D412E4F2C30236300E5ED12 /* LError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E4E2C30236300E5ED12 /* LError.swift */; };
 		3D412E512C3024FD00E5ED12 /* Years.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E502C3024FD00E5ED12 /* Years.swift */; };
 		3D412E532C302AB900E5ED12 /* LeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E522C302AB900E5ED12 /* LeagueView.swift */; };
+		3D412E552C302D8300E5ED12 /* SeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E542C302D8300E5ED12 /* SeasonView.swift */; };
+		3D412E572C302D8F00E5ED12 /* SeasonView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E562C302D8F00E5ED12 /* SeasonView-ViewModel.swift */; };
+		3D412E592C30301900E5ED12 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E582C30301900E5ED12 /* Season.swift */; };
+		3D412E5C2C3032B300E5ED12 /* StandingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E5B2C3032B300E5ED12 /* StandingRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		3D412E4E2C30236300E5ED12 /* LError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LError.swift; sourceTree = "<group>"; };
 		3D412E502C3024FD00E5ED12 /* Years.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Years.swift; sourceTree = "<group>"; };
 		3D412E522C302AB900E5ED12 /* LeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueView.swift; sourceTree = "<group>"; };
+		3D412E542C302D8300E5ED12 /* SeasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonView.swift; sourceTree = "<group>"; };
+		3D412E562C302D8F00E5ED12 /* SeasonView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeasonView-ViewModel.swift"; sourceTree = "<group>"; };
+		3D412E582C30301900E5ED12 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		3D412E5B2C3032B300E5ED12 /* StandingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				3D412E4B2C30228C00E5ED12 /* League.swift */,
+				3D412E582C30301900E5ED12 /* Season.swift */,
 				3D412E502C3024FD00E5ED12 /* Years.swift */,
 			);
 			path = Models;
@@ -156,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				3D412E492C30225800E5ED12 /* HomeView-ViewModel.swift */,
+				3D412E562C302D8F00E5ED12 /* SeasonView-ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -163,8 +173,10 @@
 		3D412E462C30221600E5ED12 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D412E5A2C30328600E5ED12 /* Data */,
 				3D412E472C30224900E5ED12 /* HomeView.swift */,
 				3D412E522C302AB900E5ED12 /* LeagueView.swift */,
+				3D412E542C302D8300E5ED12 /* SeasonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +187,14 @@
 				3D412E4E2C30236300E5ED12 /* LError.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3D412E5A2C30328600E5ED12 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3D412E5B2C3032B300E5ED12 /* StandingRow.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,11 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D412E552C302D8300E5ED12 /* SeasonView.swift in Sources */,
 				3D412E4A2C30225800E5ED12 /* HomeView-ViewModel.swift in Sources */,
 				3D412E532C302AB900E5ED12 /* LeagueView.swift in Sources */,
 				3D412E512C3024FD00E5ED12 /* Years.swift in Sources */,
+				3D412E572C302D8F00E5ED12 /* SeasonView-ViewModel.swift in Sources */,
+				3D412E592C30301900E5ED12 /* Season.swift in Sources */,
 				3D412E482C30224900E5ED12 /* HomeView.swift in Sources */,
 				3D412E4F2C30236300E5ED12 /* LError.swift in Sources */,
+				3D412E5C2C3032B300E5ED12 /* StandingRow.swift in Sources */,
 				3D412E1D2C3021D900E5ED12 /* ContentView.swift in Sources */,
 				3D412E4C2C30228C00E5ED12 /* League.swift in Sources */,
 				3D412E1B2C3021D900E5ED12 /* Football_LeaguesApp.swift in Sources */,
