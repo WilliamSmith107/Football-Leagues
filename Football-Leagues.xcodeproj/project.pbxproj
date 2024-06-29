@@ -14,6 +14,10 @@
 		3D412E2C2C3021D900E5ED12 /* Football_LeaguesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E2B2C3021D900E5ED12 /* Football_LeaguesTests.swift */; };
 		3D412E362C3021D900E5ED12 /* Football_LeaguesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E352C3021D900E5ED12 /* Football_LeaguesUITests.swift */; };
 		3D412E382C3021D900E5ED12 /* Football_LeaguesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E372C3021D900E5ED12 /* Football_LeaguesUITestsLaunchTests.swift */; };
+		3D412E482C30224900E5ED12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E472C30224900E5ED12 /* HomeView.swift */; };
+		3D412E4A2C30225800E5ED12 /* HomeView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E492C30225800E5ED12 /* HomeView-ViewModel.swift */; };
+		3D412E4C2C30228C00E5ED12 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E4B2C30228C00E5ED12 /* League.swift */; };
+		3D412E4F2C30236300E5ED12 /* LError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D412E4E2C30236300E5ED12 /* LError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		3D412E312C3021D900E5ED12 /* Football-LeaguesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Football-LeaguesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D412E352C3021D900E5ED12 /* Football_LeaguesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_LeaguesUITests.swift; sourceTree = "<group>"; };
 		3D412E372C3021D900E5ED12 /* Football_LeaguesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_LeaguesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D412E472C30224900E5ED12 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3D412E492C30225800E5ED12 /* HomeView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView-ViewModel.swift"; sourceTree = "<group>"; };
+		3D412E4B2C30228C00E5ED12 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		3D412E4E2C30236300E5ED12 /* LError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		3D412E192C3021D900E5ED12 /* Football-Leagues */ = {
 			isa = PBXGroup;
 			children = (
+				3D412E462C30221600E5ED12 /* Views */,
+				3D412E452C30221100E5ED12 /* ViewModels */,
+				3D412E442C30220C00E5ED12 /* Models */,
+				3D412E4D2C30235700E5ED12 /* Utilities */,
 				3D412E1A2C3021D900E5ED12 /* Football_LeaguesApp.swift */,
 				3D412E1C2C3021D900E5ED12 /* ContentView.swift */,
 				3D412E1E2C3021D900E5ED12 /* Assets.xcassets */,
@@ -125,6 +137,38 @@
 				3D412E372C3021D900E5ED12 /* Football_LeaguesUITestsLaunchTests.swift */,
 			);
 			path = "Football-LeaguesUITests";
+			sourceTree = "<group>";
+		};
+		3D412E442C30220C00E5ED12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D412E4B2C30228C00E5ED12 /* League.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D412E452C30221100E5ED12 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3D412E492C30225800E5ED12 /* HomeView-ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3D412E462C30221600E5ED12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D412E472C30224900E5ED12 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D412E4D2C30235700E5ED12 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3D412E4E2C30236300E5ED12 /* LError.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D412E4A2C30225800E5ED12 /* HomeView-ViewModel.swift in Sources */,
+				3D412E482C30224900E5ED12 /* HomeView.swift in Sources */,
+				3D412E4F2C30236300E5ED12 /* LError.swift in Sources */,
 				3D412E1D2C3021D900E5ED12 /* ContentView.swift in Sources */,
+				3D412E4C2C30228C00E5ED12 /* League.swift in Sources */,
 				3D412E1B2C3021D900E5ED12 /* Football_LeaguesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
