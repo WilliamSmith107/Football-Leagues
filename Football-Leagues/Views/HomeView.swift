@@ -33,16 +33,22 @@ struct HomeView: View {
             
             ScrollView {
                 
-                // Display all leagues in the API.
-                ForEach(viewModel.leagues) { league in
-                    
-                    if (league.years != nil) {
-                        if ((league.years!.contains(viewModel.selectedYear))) {
-                            Text("\(league.name)")
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 170))]) {
+                    // Display all leagues in the API.
+                    ForEach(viewModel.leagues) { league in
+                        
+                        if (league.years != nil) {
+                            if ((league.years!.contains(viewModel.selectedYear))) {
+                                
+                                LeagueView(league: league)
+                                    .frame(height: 120)
+                                
+                            }
                         }
                     }
                 }
             }
+            .padding(10.0)
         }
         .task {
             do {
