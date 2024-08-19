@@ -29,7 +29,7 @@ extension HomeView {
         // Fetch leagues from URL.
         func getLeagues() async throws -> [League] {
             
-            let endpoint = "https://api-football-standings.azharimm.dev/leagues"
+            let endpoint = "https://football-standings-api-pqotco6hc-azharimm.vercel.app/leagues"
             
             guard let url = URL(string: endpoint) else { throw LError.invalidURL }
             
@@ -77,7 +77,8 @@ extension HomeView {
         // Featch years associated with a season from ID.
         func getYears(id: String) async throws -> [Int] {
             
-            let endpoint = "https://api-football-standings.azharimm.dev/leagues/\(id)/seasons"
+            let endpoint = "https://football-standings-api-pqotco6hc-azharimm.vercel.app/leagues/\(id)/seasons"
+            
             
             guard let url = URL(string: endpoint) else { throw LError.invalidURL }
             

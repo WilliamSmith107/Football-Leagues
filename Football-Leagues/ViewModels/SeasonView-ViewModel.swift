@@ -28,7 +28,8 @@ extension SeasonView {
         // Fetch standings for the given league and season.
         func getStandings() async throws -> Season {
             
-            let endpoint = "https://api-football-standings.azharimm.dev/leagues/\(id)/standings?season=\(year.description)&sort=asc"
+            let endpoint = "https://football-standings-api-pqotco6hc-azharimm.vercel.app/leagues/\(id)/standings?season=\(year.description)&sort=asc"
+
             
             print(endpoint)
             
